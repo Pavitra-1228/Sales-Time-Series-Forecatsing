@@ -1,38 +1,15 @@
 # Sales Time Series Forecasting
 
-This project provides a *user-friendly* web app to explore and forecast sales time series data.
+This project focuses on forecasting future sales using historical sales data through time series analysis. 
+The model analyzes past trends, patterns, and seasonality to predict upcoming sales values.
 
-## ✅ Run the web app
+The project is implemented using Python and includes data preprocessing, visualization, and forecasting using statistical models such as ARIMA.
 
-From the project directory, run:
+Technologies Used:
+- Python
+- Pandas
+- Matplotlib
+- Statsmodels
+- Jupyter Notebook
 
-```bash
-streamlit run app.py
-```
-
-Then open the address shown in your terminal (usually `http://localhost:8501`).
-
-## 🔍 What it does
-
-- Loads your **train.csv** (or any uploaded CSV file)
-- Lets you pick the **date column** and **sales/value column**
-- Builds a simple forecast and shows:
-  - Plot of historical data
-  - Forecast chart (next N days)
-  - Forecast table
-
-## 🛠 Troubleshooting
-
-### `ModuleNotFoundError: No module named 'pandas'`
-
-Install dependencies with:
-
-```bash
-python -m pip install pandas streamlit scikit-learn
-```
-
-### CSV encoding error
-
-The app tries multiple encodings (UTF‑8, Latin‑1, CP1252) when reading your CSV.
-
-If you still see errors, the file may be corrupt or use an unusual encoding.
+The goal of this project is to help businesses make better decisions by predicting future sales trends.
